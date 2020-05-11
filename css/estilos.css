@@ -2,7 +2,7 @@
 body{
     background-image: url('https://i.pinimg.com/originals/82/45/6e/82456ec9cf9d541f212967929b3f4a46.jpg') ;
     background-size: auto 100vh;
-    front-family: Arial;
+    font-family: Arial;
     height: 100vh;
   }
   
@@ -33,6 +33,6 @@ body{
   
   .site-subtitle{
     text-align: center;
-    front-style: italic;
+    font-style: italic;
     color: whitesmoke;
   }
