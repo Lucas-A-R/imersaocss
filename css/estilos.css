@@ -58,6 +58,11 @@ body{
     color: whitesmoke;
   text-align: center;
   }
+
+  .site-title{
+    font-size: 4em;
+    font-family: 'Jost', sans-serif;
+  }
   
   .site-subtitle{
     text-align: center;
@@ -70,9 +75,41 @@ body{
     font-weight: lighter;
     text-align: center;
     font-size: 2em;
+    line-height: 2.1em;
+    font-family: 'Roboto Condensed', sans-serif;
   }
 
-  .img-portifolio{
-    height: 180px;
-    width: 180px;
+  .site-portifolio{
+  font-family: 'Roboto Condensed', sans-serif;
+  background: teal;
+  color: lightblue;
+}
+.site-portifolio .grid{
+  display: grid;
+  gap: 2em;
+}
+@media (min-width: 560px) {
+  .site-portfolio .grid {
+    grid-template-columns: 240px 240px;
+  }
+}
+
+@media (min-width: 880px) {
+  .site-portfolio .grid {
+    grid-template-columns: repeat(3, 260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 8em - 48px);
+  }
+}
+.site-portfolio figure {
+  text-align: center;
+}
+
+  .img-portfolio{
+    height: 240px;
+    width: 240px;
+    object-fit: cover;
+    object-position: left bottom;
+    border-radius: 25%
   }
