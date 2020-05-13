@@ -1,3 +1,8 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* Aula inicial :D */
 body{
     background-image: url('https://i.pinimg.com/originals/82/45/6e/82456ec9cf9d541f212967929b3f4a46.jpg') ;
@@ -5,19 +10,42 @@ body{
     font-family: Arial;
     height: 100vh;
   }
+
+  @media(min-width: 400px){
+    body{
+      font-size: 14px;
+    }
+
+  }
+  header{
+    height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  }
   
   .menu{
     background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
   }
   
   .menu ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .menu li {
     list-style: none;
   }
   
+  .menu a{
+    color: teal;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+  }
   a{
     text-decoration: none;
   }
@@ -27,12 +55,24 @@ body{
   }
   
   .site-title{
-    text-align: center;
     color: whitesmoke;
+  text-align: center;
   }
   
   .site-subtitle{
     text-align: center;
     font-style: italic;
     color: whitesmoke;
+  }
+  .site-subtitle{
+    color: silver;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .img-portifolio{
+    height: 180px;
+    width: 180px;
   }
